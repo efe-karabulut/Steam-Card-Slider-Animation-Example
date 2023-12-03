@@ -1,0 +1,13 @@
+@media screen and (max-width: 1280px) {
+  .card-container {
+    min-width: 764px;
+    max-width: 764px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .card-container {
+    min-width: 374px;
+    max-width: 374px;
+  }
+}

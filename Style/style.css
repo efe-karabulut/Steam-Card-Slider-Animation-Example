@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Motiva Sans", Sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #344654;
+}
+
+.site-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 11.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-width: 1154px;
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition: 0.5s;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-content {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  min-width: 374px;
+  min-height: 448px;
+}
+
+.card-content .imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: 0.7s;
+}
+
+.card-content .imgs img {
+  transition: 0.7s;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+*/
+.discount-container {
+  position: absolute;
+  bottom: 3vh;
+  right: 0;
+  font-size: 1.1vw;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  min-width: min-content;
+}
+
+.prices {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  text-align: center;
+  background-color: #344654;
+  padding: 1px 3px;
+  min-width: min-content;
+}
+
+.percent {
+  background-color: #a1cd44;
+  color: black;
+  font-weight: bold;
+  padding: 1px 4px;
+  font-size: 15px;
+}
+
+.original-price {
+  position: relative;
+  color: #848e94;
+  font-size: 15px;
+}
+
+.prices .original-price::before {
+  content: "";
+  left: 0px;
+  right: 0px;
+  position: absolute;
+  top: 43%;
+  border-bottom: 1.5px solid #738895;
+  transform: skewY(-9deg);
+}
+
+.prices .discount-price {
+  color: #ffff;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.hover-data {
+  position: absolute;
+  top: 100%;
+  transition: 0.8s;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  opacity: 0;
+}
+
+.card-content:hover .hover-data {
+  top: 0;
+  opacity: 1;
+}
+
+.card-content:hover .imgs img {
+  opacity: 0.5;
+}
+
+.video-container {
+  display: flex;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  border: none !important;
+  outline: none !important;
+}
+/* 
+
+
+
+
+
+
+*/
+.hover-content {
+  position: absolute;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(315deg, #213c55 5%, #016968 95%);
+  width: 100%;
+  height: 54%;
+  color: #fff;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.card-content:hover .hover-content {
+  top: 46.5%;
+  opacity: 1;
+}
+
+.content-header {
+  padding: 6%;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.content-header .h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.content-header .rate {
+  font-size: 12px;
+  color: #66c0f4;
+  margin-top: 1rem;
+  cursor: text;
+}
+
+.rate.diablo {
+  color: #b9a074;
+}
+
+.rate.fc24 {
+  color: #b9a074;
+}
+
+.categories {
+  padding: 6%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.categories a {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #c6d4df;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart {
+  width: 109px;
+  margin-top: 1.2rem;
+  padding: 0 6%;
+  font-size: 12px;
+  margin-left: 6%;
+  padding: 8px 6%;
+  color: #d2e885;
+  background: linear-gradient(to bottom, #a4d007 5%, #536904 95%);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  color: white;
+  background: linear-gradient(to bottom, #bcee08 5%, #678206 95%);
+}
+
+.arrowRight {
+  background-color: transparent;
+  border: none;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.arrowRight::after {
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: bold;
+  font-size: 3rem;
+  color: grey;
+  border: none;
+  transition: 0.3s;
+}
+
+.arrowRight:hover::after {
+  color: white;
+}
+
+.arrowLeft {
+  background-color: transparent;
+  border: none;
+  margin-right: 1rem;
+}
+
+.arrowLeft::after {
+  content: "\f053";
+  font-family: "Font Awesome 6 Free";
+  font-weight: bold;
+  font-size: 3rem;
+  color: grey;
+  border: none;
+  cursor: pointer;
+}
+
+.arrowLeft:hover::after {
+  color: white;
+}
+
+.add-to-cart.special {
+  margin-top: 3.4rem;
+}
