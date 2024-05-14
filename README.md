@@ -17,7 +17,7 @@ These functionalities mimic the familiar user interface of Steam's cart slider, 
 
 ---
 
-Technologies Used for Steam Cart Animation
+## Technologies Used for Steam Cart Animation
 - **HTML**
 - **CSS**
 - **JavaScript**
