@@ -26,4 +26,4 @@ These functionalities mimic the familiar user interface of Steam's cart slider, 
 
 ## How to Run Steam Cart Slider Animation App
 
-- **[GO LIVE]**: (https://efe-karabulut.github.io/Steam-Card-Slider-Animation-Example/)
+- [**GO LIVE**:](https://efe-karabulut.github.io/Steam-Card-Slider-Animation-Example/)
